@@ -1,0 +1,12 @@
+site_name: Development Machine
+site_url: https://jmgilman.github.io/dev-machine
+
+repo_name: jmgilman/dev-machine
+repo_url: https://github.com/jmgilman/dev-machine
+
+site_author: Joshua Gilman
+
+docs_dir: src
+
+theme:
+  name: material
