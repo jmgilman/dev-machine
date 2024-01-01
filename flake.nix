@@ -30,6 +30,7 @@
           name = "Development Machine";
           packages = with pkgs; [
             # Misc
+            ansible
             mkdocs
 
             # Python

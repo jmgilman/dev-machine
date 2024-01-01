@@ -1,0 +1,11 @@
+- name: Setup system
+  hosts: all
+  tasks:
+    - name: Check if Nix is installed
+      command: nix doctor
+      register: nix_doctor_result
+      ignore_errors: true
+      changed_when: false
+    - name: Install Nix
+      command: just nix-install
+      when: nix_doctor_result is failed
